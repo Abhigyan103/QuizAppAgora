@@ -40,6 +40,8 @@ public class QuestionPage extends AppCompatActivity {
             public void onClick(View view) {
                 if(questions.get(current-1).getAnswer()==1) {
                     marks +=2;
+                }else {
+                    marks-=1;
                 }
                 current++;
                 setDataToViews();
@@ -50,6 +52,8 @@ public class QuestionPage extends AppCompatActivity {
             public void onClick(View view) {
                 if(questions.get(current-1).getAnswer()==2) {
                     marks +=2;
+                }else {
+                    marks-=1;
                 }
                 current++;
                 setDataToViews();
@@ -61,6 +65,8 @@ public class QuestionPage extends AppCompatActivity {
             public void onClick(View view) {
                 if(questions.get(current-1).getAnswer()==3) {
                     marks +=2;
+                }else {
+                    marks-=1;
                 }
                 current++;
                 setDataToViews();
@@ -72,6 +78,8 @@ public class QuestionPage extends AppCompatActivity {
             public void onClick(View view) {
                 if(questions.get(current-1).getAnswer()==4) {
                     marks +=2;
+                }else {
+                    marks-=1;
                 }
                 current++;
                 setDataToViews();
@@ -95,6 +103,8 @@ public class QuestionPage extends AppCompatActivity {
     public void setQuestions() {
         questions.add(new QuizModal("This is the first Question","kya","likhu","main","idhar",4));
         questions.add(new QuizModal("This is the second Question","kuch","bhi","likh","du ?",4));
+        questions.add(new QuizModal("Third question", "","","","",2));
+
         numberOfQuestions=questions.size();
     }
     public void openMarksScreen(View view) {
@@ -107,7 +117,6 @@ public class QuestionPage extends AppCompatActivity {
         intent.putExtra("rollnumber", Roll);
         intent.putExtra("marks", yourMarks);
         intent.putExtra("totalmarks", yourTotalMarks);
-//        Toast.makeText(this, "Name"+ Name, Toast.LENGTH_SHORT).show();
         startActivity(intent);
     }
 }
