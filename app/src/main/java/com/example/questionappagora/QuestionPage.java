@@ -111,8 +111,28 @@ public class QuestionPage extends AppCompatActivity {
         questions.add(new QuizModal("\n\nIn the Haber process for the manufacture of ammonia the following catalyst is used","Platinized asbestos","Iron with molybdenum as a promoter","Copper oxide","Alumina",2));
         questions.add(new QuizModal("\n\nWhich is the first man-made element?","Sc","Os","Tc","Zr",3));
         questions.add(new QuizModal("\n\nRutile is an ore of which of the following metals?","Scandium","Titanium","Manganese","Chromium",2));
+        questions.add(new QuizModal("\n\nA cart moves with a constant speed along a horizontal circular\n" +
+                "path. From the cart, a particle is thrown up vertically with\n" +
+                "respect to the cart.","The particle will land somewhere on the circular path.","The particle will land outside the circular path.","The particle will follow an elliptical path"," The particle will follow a parabolic path.",4));
+        questions.add(new QuizModal("\n\nA man who can swim at a speed v relative to the water wants to\n" +
+                "cross a river of width d, flowing with a speed u. The point\n" +
+                "opposite him across the river is P","The minimum time in which he can cross the river is d/v" ,"He can reach the point P in time d/v\n" ,"He can reach the point P in time d/(v^2-u^2)^0.5","He cannot reach P if u>v",1));
+        questions.add(new QuizModal("\n\n A charged particle X moves directly towards another charged\n" +
+                "particle Y. For the ‘X plus Y’ system, the total momentum is p\n" +
+                "and the total energy is E."," p and E are conserved if both X and Y are free to move." ," (a) is true only if X and Y have similar charges. \n" ,"If Y is not fixed, E is conserved but not p."," If Y is fixed, neither E nor p is conserved.\n",1));
+        questions.add(new QuizModal("A sphere A moving with a speed u and rotating with an angular\n" +
+                "velocity w, makes a head-on elastic collision with an identical\n" +
+                "stationary sphere B. There is no friction between the surfaces of A\n" +
+                "and B. Disregard gravity.","A will stop moving and rotating with an angular\n" +
+                "velocity w.","A will come to rest and stop rotating."," B will move with a speed u without rotating.","B will move with a speed u and rotate with an angular\n" +
+                "velocity w.",3));
+        questions.add(new QuizModal("\n\nA cannon shell is fired to hit a target at a horizontal distance R.\n" +
+                "However, it breaks into two equal parts at its highest point. One\n" +
+                "part (A) returns to the cannon. The other part","will fall at a distance of R beyond the target\n"," will fall at a distance of 3R beyond the target"," will hit the target"," have eight times the kinetic energy of A",1));
+
 
         numberOfQuestions=questions.size();
+
     }
     public void openMarksScreen(View view) {
         Name = getIntent().getStringExtra("full_name");
