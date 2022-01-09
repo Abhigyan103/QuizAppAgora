@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:background="@color/pink">
+    android:background="@color/teal_700"
+    tools:context=".MainActivity">
 
     <EditText
         android:id="@+id/idFirstName"
@@ -23,7 +23,7 @@
         android:id="@+id/idLastName"
         android:layout_width="144dp"
         android:layout_height="49dp"
-        android:layout_marginTop="236dp"
+        android:layout_marginTop="240dp"
         android:layout_marginEnd="36dp"
         android:ems="10"
         android:hint="Last Name"
@@ -33,9 +33,11 @@
 
     <EditText
         android:id="@+id/idRollNumber"
-        android:layout_width="337dp"
+        android:layout_width="0dp"
         android:layout_height="49dp"
+        android:layout_marginStart="36dp"
         android:layout_marginTop="32dp"
+        android:layout_marginEnd="36dp"
         android:ems="10"
         android:hint="Roll Number"
         android:inputType="number"
@@ -46,11 +48,13 @@
 
     <EditText
         android:id="@+id/idEmailID"
-        android:layout_width="337dp"
+        android:layout_width="0dp"
         android:layout_height="49dp"
+        android:layout_marginStart="36dp"
         android:layout_marginTop="32dp"
+        android:layout_marginEnd="36dp"
         android:ems="10"
-        android:hint="Email Address"
+        android:hint="Email Address (Optional)"
         android:inputType="textEmailAddress"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -58,9 +62,11 @@
 
     <Spinner
         android:id="@+id/idYear"
-        android:layout_width="337dp"
+        android:layout_width="0dp"
         android:layout_height="49dp"
+        android:layout_marginStart="36dp"
         android:layout_marginTop="32dp"
+        android:layout_marginEnd="36dp"
         android:entries="@array/year_array"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -76,5 +82,17 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/idYear" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="330dp"
+        android:layout_height="212dp"
+        android:paddingHorizontal="60dp"
+        app:layout_constraintBottom_toTopOf="@+id/idFirstName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/image1" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

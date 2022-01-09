@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".QuestionPage"
-    android:background="@color/pink">
+    android:background="@color/cool"
+    tools:context=".QuestionPage">
 
     <Button
         android:id="@+id/idBtnSubmit"
@@ -101,9 +101,9 @@
 
         <TextView
             android:id="@+id/idTextQuestionTV"
-            android:layout_width="350dp"
+            android:layout_width="360dp"
             android:layout_height="195dp"
-            android:layout_marginStart="8dp"
+            android:paddingHorizontal="10dp"
             android:text="Question"
             android:textSize="20sp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -115,6 +115,7 @@
             android:layout_width="0dp"
             android:layout_height="50dp"
             android:layout_marginTop="4dp"
+            android:paddingHorizontal="30dp"
             android:text="TextView"
             android:textSize="20sp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -126,6 +127,7 @@
             android:layout_width="0dp"
             android:layout_height="50dp"
             android:layout_marginTop="24dp"
+            android:paddingHorizontal="30dp"
             android:text="TextView"
             android:textSize="20sp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -137,6 +139,7 @@
             android:layout_width="0dp"
             android:layout_height="50dp"
             android:layout_marginTop="24dp"
+            android:paddingHorizontal="30dp"
             android:text="TextView"
             android:textSize="20sp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -148,10 +151,23 @@
             android:layout_width="0dp"
             android:layout_height="50dp"
             android:layout_marginTop="24dp"
+            android:paddingHorizontal="30dp"
             android:text="TextView"
             android:textSize="20sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/idoC" />
-        </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/idTextTotalQuestionTV"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:text="Total Questions"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -23,19 +23,17 @@ public class MainActivity extends AppCompatActivity {
     public void openQuestionPage(View view) {
         String firstName = FirstName.getText().toString();
         String lastName = LastName.getText().toString();
+        rollNo = RollNo.getText().toString();
         if(firstName.trim().length() == 0 || lastName.trim().length() == 0){
             Toast.makeText(this, "Please Enter your name correctly", Toast.LENGTH_SHORT).show();
-        } else {
+        } else if(rollNo.trim().length() == 0) {
+            Toast.makeText(this, "Enter Your Roll  Number Correctly", Toast.LENGTH_SHORT).show();
+        }else {
             fullName= firstName + " " + lastName;
-            try {
-                rollNo = RollNo.getText().toString();
-                Intent intent = new Intent(this, QuestionPage.class);
-                intent.putExtra("full_name", fullName);
-                intent.putExtra("rollnumber", rollNo);
-                startActivity(intent);
-            } catch (Exception e) {
-                Toast.makeText(this, "Enter Your Roll  Number Correctly", Toast.LENGTH_SHORT).show();
-            }
+            Intent intent = new Intent(this, QuestionPage.class);
+            intent.putExtra("full_name", fullName);
+            intent.putExtra("rollnumber", rollNo);
+            startActivity(intent);
         }
     }
 }

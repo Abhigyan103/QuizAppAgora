@@ -22,9 +22,9 @@ public class Marks_Screen extends AppCompatActivity {
         String yourTotalMarks = intent.getStringExtra("totalmarks").toString();
         name= findViewById(R.id.idName);
         roll= findViewById(R.id.idRoll);
-        name.setText("Name :"+Name);
-        roll.setText("Roll :"+Roll);
-        message.setText("You Have Scored "+yourMarks+ " out of "+yourTotalMarks);
+        name.setText("Name : "+Name);
+        roll.setText("Roll   : "+Roll);
+        message.setText(yourMarks+ " out of "+yourTotalMarks+" marks.");
 
     }
     public void openHomeScreen(View v) {
