@@ -101,9 +101,16 @@ public class QuestionPage extends AppCompatActivity {
         option4TV.setText("D :" + questions.get(current-1).getOptionD());
     }
     public void setQuestions() {
-        questions.add(new QuizModal("This is the first Question","kya","likhu","main","idhar",4));
-        questions.add(new QuizModal("This is the second Question","kuch","bhi","likh","du ?",4));
-        questions.add(new QuizModal("Third question", "","","","",2));
+        questions.add(new QuizModal("\n\nWhich is the lowest energy conformation of butane?","anti","gauche","partially eclipsed","fully eclipsed",1));
+        questions.add(new QuizModal("\n\nAcetic acid has a pKa of 4.8. Ethanol has a pKa of 16.0. What are the major species present, when acetic acid and ethanol are added to water and the pH is adjusted to 7.0?","acetic acid and peracetic acid","ethoxide ion and ethanol","acetic acid and ethoxide ion","acetate ion and ethanol",4));
+        questions.add(new QuizModal("\n\n1-methyl cyclopentene is reacted with HBr and CCl4. Comment upon the optical reactivity of the product.", "Racemic mixture","Diastereomers","Optically inactive","Meso",3));
+        questions.add(new QuizModal("\n\nWhich of the following is not cleaved by Periodic acid?", "glycol","1,3-propenediol","glycerol","all of the above",2));
+        questions.add(new QuizModal("\n\nWhich of the following will form stable Hydrate?", "chloral","ninhydrin","Hexafluoroacetone","all of these",4));
+        questions.add(new QuizModal("\n\nAn increase in the conductivity equivalent of a solid electrolyte with dilution is primarily due to", "increased ionic mobility of ions","increase in both ion numbers and ionic mobility","100 percent electrolyte ionisation with natural dilution","A rise in ion counts",1));
+        questions.add(new QuizModal("\n\nThe average rate and instantaneous rate of a reaction are equal","at the start","at the end","when two rates have a time interval equal to zero","in the middle",3));
+        questions.add(new QuizModal("\n\nIn the Haber process for the manufacture of ammonia the following catalyst is used","Platinized asbestos","Iron with molybdenum as a promoter","Copper oxide","Alumina",2));
+        questions.add(new QuizModal("\n\nWhich is the first man-made element?","Sc","Os","Tc","Zr",3));
+        questions.add(new QuizModal("\n\nRutile is an ore of which of the following metals?","Scandium","Titanium","Manganese","Chromium",2));
 
         numberOfQuestions=questions.size();
     }
